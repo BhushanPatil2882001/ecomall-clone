@@ -46,36 +46,54 @@
                 <div class="logo">
                     <img src="./assets/images/header/logo-white.png" alt="" width="100%">
                 </div>
-                <div class="nav-items">
-                    <ul class="flex gap-30">
-                        <li class="flex align-center gap-5">Home <i class="ri-arrow-down-wide-line"></i></li>
-                        <li class="flex align-center gap-5">Laptops<i class="ri-arrow-down-wide-line"></i></li>
-                        <li class="flex align-center gap-5">Smartphone<i class="ri-arrow-down-wide-line"></i></li>
-                        <li class="flex align-center gap-5">Headphones<i class="ri-arrow-down-wide-line"></i></li>
-                        <li class="flex align-center gap-5">Camera<i class="ri-arrow-down-wide-line"></i></li>
-                    </ul>
-                </div>
-                <div class="nav-right flex gap-30 align-center">
-                    <div class="favourites">
-                        <i class="ri-heart-line"></i>
+                <input type="checkbox" id="sidebar-active">
+                <div class="wrap gap-20 responsive-navbar flex align-center justify-between">
+                    <div class="nav-items">
+                        <ul class="flex gap-30">
+                            <li>
+                                <button>
+                                    <label for="sidebar-active">
+                                        <i class="ri-close-line"></i>
+                                    </label>
+                                </button>
+                            </li>
+                            <li class="flex align-center gap-5">Home <i class="ri-arrow-down-wide-line"></i></li>
+                            <li class="flex align-center gap-5">Laptops<i class="ri-arrow-down-wide-line"></i></li>
+                            <li class="flex align-center gap-5">Smartphone<i class="ri-arrow-down-wide-line"></i></li>
+                            <li class="flex align-center gap-5">Headphones<i class="ri-arrow-down-wide-line"></i></li>
+                            <li class="flex align-center gap-5">Camera<i class="ri-arrow-down-wide-line"></i></li>
+                        </ul>
                     </div>
-                    <div class="account flex align-center gap-10">
-                        <div class="user-image">
-                            <i class="ri-user-line"></i>
+                    <div class="nav-right flex gap-30 align-center">
+                        <div class="favourites">
+                            <i class="ri-heart-line"></i>
                         </div>
-                        <div class="user-info">
-                            <p>My Account</p>
-                            <p>Login</p>
+                        <div class="account flex align-center gap-10">
+                            <div class="user-image">
+                                <i class="ri-user-line"></i>
+                            </div>
+                            <div class="user-info">
+                                <p>My Account</p>
+                                <p>Login</p>
+                            </div>
+                        </div>
+                        <div class="cart flex align-center gap-10">
+                            <div class="cart-icon">
+                                <i class="ri-shopping-cart-line"></i>
+                            </div>
+                            <div class="user-cart">
+                                <p>My Cart</p>
+                                <p>$0.00</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="cart flex align-center gap-10">
-                        <div class="cart-icon">
-                            <i class="ri-shopping-cart-line"></i>
-                        </div>
-                        <div class="user-cart">
-                            <p>My Cart</p>
-                            <p>$0.00</p>
-                        </div>
+                    <!-- nav toggle -->
+                    <div class="nav-toggle">
+                        <button>
+                            <label for="sidebar-active">
+                                <i class="ri-menu-line"></i>
+                            </label>
+                        </button>
                     </div>
                 </div>
             </nav>
@@ -133,6 +151,9 @@
     <!-- ========== MAIN START ========== -->
     <main>
         <!-- === HERO_SECTION_START === -->
+        <div class="hero-section">
+            <div class="bg-image"></div>
+        </div>
         <!-- === HERO_SECTION_END === -->
         <!-- === SECTION 2 - ABOUT START === -->
 
