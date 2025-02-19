@@ -7,6 +7,7 @@
     --highlight: #fcc904;
     --clr-red: #dd2831;
     --items-bg: #e9f2f9;
+    --sec-bg: #f4f4f4;
 
     --clr-white: #fff;
 
@@ -388,8 +389,13 @@ header{
 
 /* ============================= CATEGORIES START ============================= */
 
+.categories-section{
+    border-bottom: 2px solid var(--icons-border);
+}
+
 .categories-section h2{
     font-size: 30px;
+    padding-bottom: 15px;
 }
 
 /* items */
@@ -420,6 +426,72 @@ header{
 }
 
 /* ============================= CATEGORIES END ============================= */
+
+/* ============================= DEALS START ============================= */
+
+.deals-section{
+    background-color: var(--sec-bg);
+}
+
+.deals-heading{
+    border-bottom: 2px solid var(--icons-border);
+}
+.deals-heading h2{
+    font-size: 30px;
+    padding-bottom: 15px;
+}
+
+
+/* deals  */
+.discount-percent, .discount-remark{
+    background-color: var(--count-bg);
+    color: var(--clr-white);
+    font-size: 12px;
+    padding: 2px 8px;
+    border-radius: 0 6px 8px 6px;
+}
+.discount-remark{
+    background-color: var(--clr-red);
+    margin-left: 5px;
+}
+
+
+.first-card{
+    background-color: var(--clr-white);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+.xbox-details :first-child{
+    color: var(--clr-top-bar);
+    padding: 10px 0;
+}
+
+.xbox-details :last-child{
+    font-weight: 600;
+}
+
+.xbox-stars{
+    padding: 10px 0;
+}
+.xbox-stars i{
+    color: var(--highlight);
+    font-size: 14px;
+}
+
+.xbox-price :first-child{
+    color: var(--clr-red);
+    font-weight: bold;
+    font-size: 20px;
+}
+.xbox-price :last-child{
+    text-decoration: line-through;
+    color: var(--clr-top-bar);
+}
+
+
+
+/* ============================= DEALS END ============================= */
 
 
 
