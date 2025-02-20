@@ -89,6 +89,9 @@
 .pad-12{
     padding: 12px;
 }
+.pad-25{
+    padding: 25px 0;
+}
 .pad-50{
     padding: 50px 0;
 }
@@ -164,6 +167,7 @@ header{
     max-width: 150px;
     margin-right: 20px;
     min-width: 100px;
+    cursor: pointer;
 }
 
 .responsive-navbar{
@@ -184,11 +188,25 @@ header{
     border: none;
     font-size: 20px;
 }
+.nav-items ul li{
+    cursor: pointer;
+    transition: var(--basic-transition);
+}
+.nav-items ul li:hover{
+    filter: brightness(90%);
+}
 
 .favourites i, .user-image i, .cart-icon i, .contact-icon i{
     font-size: 30px;
     color: var(--icons-border);
     font-weight: 100;
+    cursor: pointer;
+}
+.user-info, .user-cart{
+    cursor: pointer;
+}
+.favourites i:hover, .user-image i:hover,.user-cart:hover, .user-info:hover, .cart-icon i:hover, .contact-icon i:hover{
+    filter: brightness(90%);
 }
 
 .favourites{
@@ -221,6 +239,21 @@ header{
     font-weight: bold;
 }
 
+select{
+    cursor: pointer;
+    transition: var(--basic-transition);
+}
+select:hover{
+    filter: brightness(90%);
+}
+
+button{
+    cursor: pointer;
+    transition: var(--basic-transition);
+}
+button:hover{
+    filter: brightness(90%);
+}
 /* ============================= NAVBAR END ============================= */
 
 /* ============================= NAVBAR BOTTOM END ============================= */
@@ -407,6 +440,7 @@ header{
     margin-bottom: 20px;
     cursor: pointer;
     transition: var(--basic-transition);
+    border-radius: 10px;
 }
 .item-bg:hover{
     background-color: var(--clr-top-bar);
@@ -465,6 +499,10 @@ header{
     padding: 20px;
     border-radius: 10px;
     height: 100%;
+    cursor: pointer;
+}
+.third-card{
+    cursor: pointer;
 }
 .xbox-details :first-child{
     color: var(--clr-top-bar);
@@ -697,29 +735,146 @@ header{
 
 /* ============================= BLOG END ============================= */
 
+/* ============================= BLOG END ============================= */
 
+/* ============================= LAST SECTION START ============================= */
 
-/* ============================= MAIN END ============================= */
+.last-section{
+    background-color: var(--sec-bg);
+}
+.last-container div span i{
+    font-size: 80px;
+    color: var(--count-bg);
+}
 
+/* ============================= LAST SECTION END ============================= */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* ============================= MAIN START ============================= */
 
 
 
 
 
+
+
+
+
+
+
+/* ============================= FOOTER START ============================= */
+
+footer{
+    background-color: var(--drk-bg);
+    color: var(--clr-white);
+}
+
+
+/* ============================= FOOTER TOP START ============================= */
+
+.about-us ul li{
+    transition: var(--basic-transition);
+    cursor: pointer;
+}
+
+.about-us ul li:hover{
+    color: var(--count-bg);
+}
+
+
+.contact h3{
+    font-size: 23px;
+    font-weight: 600;
+}
+
+.subscribe{
+    background-color: var(--clr-white);
+    max-width: 70%;
+    border-radius: 6px;
+    /* overflow: hidden; */
+}
+
+.subscribe input{
+    flex-grow: 1;
+    padding: 15px 0;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    padding-left: 30px;
+}
+
+.subscribe button{
+    padding: 0 30px;
+    color: var(--clr-white);
+    background-color: var(--count-bg);
+    font-weight: 700;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    transition: var(--basic-transition);
+    border-radius: 0 4px 4px 0;
+}
+.subscribe button:hover{
+    background-color: var(--drk-bg);
+}
+
+.contact-icons i{
+    font-size: 22px;
+}
+
+.footer-navigation{
+    border-bottom: 1px solid var(--clr-top-bar);
+}
+
+/* ============================= FOOTER TOP END ============================= */
+
+
+/* ============================= FOOTER BOTTOM START ============================= */
+
+.buttons button{
+    background: transparent;
+    color: var(--clr-top-bar);
+    border: 1px solid rgba(114, 114, 114, 0.39);
+    padding: 6px 14px;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: var(--basic-transition);
+}
+
+.buttons button:hover{
+    border: 1px solid var(--count-bg);
+    color: var(--count-bg);
+}
+
+.footer-bottom .container p{
+    color: var(--clr-top-bar);
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* ============================= FOOTER BOTTOM END ============================= */
+
+
+
+/* ============================= FOOTER END ============================= */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIA QUERY */
 
 
 @media(max-width: 730px){
