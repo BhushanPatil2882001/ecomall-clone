@@ -578,7 +578,6 @@ button:hover{
 }
 /* ============================= DEALS END ============================= */
 
-
 /* ============================= BRANDS START ============================= */
 
 .brands-heading h2{
@@ -606,6 +605,69 @@ button:hover{
 }
 
 /* ============================= BRANDS END ============================= */
+
+/* ============================= NEW ARRIVALS START ============================= */
+
+.new-arrivals-heading{
+    border-bottom: 1px solid var(--icons-border);
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.new-arrivals-heading :first-child{
+    color: var(--count-bg);
+}
+
+.new-arrivals-heading :nth-child(2), .new-arrivals-heading :last-child{
+    transition: var(--basic-transition);
+}
+.new-arrivals-heading :nth-child(2):hover, .new-arrivals-heading :last-child:hover{
+    color: var(--count-bg);
+}
+
+.new-arrival-cards .cards .card{
+    width: 260px;
+    cursor: pointer;
+}
+
+.image{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.new-arrival-cards .cards .card .image img{
+    width: 200px;
+}
+
+.new-arrival-cards .cards .card .image{
+    border-radius: 10px;
+    border: 1px solid transparent;
+    transition: var(--basic-transition);
+}
+.new-arrival-cards .cards .card .image:hover{
+    border: 1px solid var(--count-bg);
+}
+
+.card-bottom{
+    padding: 20px;
+}
+
+.card .price :first-child{
+    color: var(--clr-red);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.card .price :last-child{
+    text-decoration: line-through;
+    color: var(--clr-top-bar);
+}
+
+
+/* ============================= NEW ARRIVALS END ============================= */
 
 /* ============================= GAMES DISCOUNT START ============================= */
 
