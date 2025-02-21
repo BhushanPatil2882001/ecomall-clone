@@ -16,6 +16,10 @@
     --box-shadow: 2px 2px 5px 0px #a8a8a8;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
 .col-3 {width: 25%;}
@@ -960,6 +964,27 @@ footer{
 /* ============================= FOOTER BOTTOM END ============================= */
 
 
+/* scroll to top */
+a .top-btn {
+    position: fixed;
+    background-color: var(--drk-bg);
+    padding: 10px;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--clr-white);
+    transition: var(--basic-transition);
+}
+
+a .top-btn:hover {
+    background-color: var(--count-bg);
+}
+
 
 /* ============================= FOOTER END ============================= */
 
@@ -1078,10 +1103,6 @@ footer{
         display: flex;
         right: 0;
     }
-    
-    .contact{
-        display: none;
-    }
 }
 
 @media (max-width: 566px){
@@ -1128,6 +1149,26 @@ footer{
     }
     .heading h1{
         text-align: center;
+    }
+
+    .footer-navigation {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+    .footer-navigation-categories{
+        align-items: center;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .footer-navigation-categories div{
+        align-items: center;
+    }
+
+    .contact{
+        align-items: center;
     }
 
 }
